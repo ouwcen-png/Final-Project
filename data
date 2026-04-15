@@ -1,1 +1,22 @@
-
+[
+  {
+    "dataset_name": "UN DESA migration structure sample",
+    "source": "UN DESA",
+    "url": "https://www.un.org/development/desa",
+    "description": "Prototype sample representing migration origin-destination structure.",
+    "variables": {
+      "origin": "string",
+      "destination": "string",
+      "year": "integer",
+      "flow": "integer",
+      "uncertainty": "float",
+      "theme": "string"
+    },
+    "temporal_coverage": "2024",
+    "spatial_coverage": "Global regions",
+    "collection_processing_date": "Prepared for course prototype",
+    "license_usage_rights": "Educational prototype use",
+    "ethical_considerations": "Aggregated data only; no personal identifiers",
+    "accessibility": "CSV and JSON metadata, plain language labels"
+  }
+]
