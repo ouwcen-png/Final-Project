@@ -1,5 +1,4 @@
-[
-  {
+{
     "dataset_name": "UN DESA migration structure sample",
     "source": "UN DESA",
     "url": "https://www.un.org/development/desa",
@@ -19,4 +18,4 @@
     "ethical_considerations": "Aggregated data only; no personal identifiers",
     "accessibility": "CSV and JSON metadata, plain language labels"
   }
-]
+
