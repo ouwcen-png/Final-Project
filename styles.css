@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2d3d;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  padding: 24px 32px;
+  background: #173f73;
+  color: white;
+}
+
+.topbar h1 {
+  margin: 0 0 6px 0;
+  font-size: 32px;
+}
+
+.topbar p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+select {
+  border: 1px solid #bfd0e6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 0.7fr;
+  gap: 18px;
+  padding: 20px 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.mapbox {
+  position: relative;
+  height: 360px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #eef4fb 0%, #dfe9f3 100%);
+  overflow: hidden;
+}
+
+.continent {
+  position: absolute;
+  background: #ced9e4;
+  border-radius: 28px;
+}
+
+.north-america { left: 48px; top: 120px; width: 130px; height: 72px; }
+.south-america { left: 185px; top: 220px; width: 78px; height: 150px; }
+.europe-asia { left: 340px; top: 90px; width: 275px; height: 130px; }
+.africa { left: 430px; top: 225px; width: 120px; height: 150px; }
+.australia { left: 645px; top: 140px; width: 84px; height: 62px; }
+
+.arc {
+  position: absolute;
+  border-top: 5px solid #356cb4;
+  border-radius: 999px 999px 0 0;
+  opacity: 0.95;
+}
+
+.arc-1 { left: 110px; top: 130px; width: 340px; height: 110px; }
+.arc-2 { left: 110px; top: 145px; width: 405px; height: 185px; border-top-color: #2d8b70; }
+.arc-3 { left: 390px; top: 112px; width: 265px; height: 84px; border-top-color: #e07d2f; }
+
+.note {
+  margin-top: 12px;
+  color: #526171;
+  font-size: 14px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bar {
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.detail-box {
+  background: #f6f9fc;
+  border-radius: 12px;
+  padding: 14px;
+  min-height: 140px;
+  line-height: 1.5;
+  color: #425262;
+}
+
+.mini-legend {
+  margin-top: 16px;
+}
+
+.mini-legend h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.mini-legend ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.footer-card {
+  margin: 0 24px 24px 24px;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
